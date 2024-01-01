@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Registration Form</h1>
+    </div>
+    <div class="main-container">
+        <form action="/submit" method="post" class="main-form">
+
+            <!-- name-Section -->
+            <div class="name-container">
+                <div class="name-heading">
+                    <h3>Name</h3>
+                </div>
+                <div class="firstName">
+                    <input type="text" name="first_Name" id="f_name" class="nameField glow try" required>
+                    <div id="firstNameHelpLine" class="formHelpLineText">
+                        First Name
+                    </div>
+                </div>
+                <div class="lastName">
+                    <input type="text" name="last_Name" id="l_name" class="nameField glow try" required>
+                    <div id="lastNameHelpLine" class="formHelpLineText">
+                        Last Name
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- birthday -->
+            <div class="birth-container">
+                <div class="name-heading">
+                    <h3>Birth Date</h3>
+                </div>
+                <div class="date">
+                    <select name="dob_date" class="Date glow try" required>
+                        <option selected></option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                        <option value=11>11</option>
+                        <option value=12>12</option>
+                        <option value=13>13</option>
+                        <option value=14>14</option>
+                        <option value=15>15</option>
+                        <option value=16>16</option>
+                        <option value=17>17</option>
+                        <option value=18>18</option>
+                        <option value=19>19</option>
+                        <option value=20>20</option>
+                        <option value=21>21</option>
+                        <option value=22>22</option>
+                        <option value=23>23</option>
+                        <option value=24>24</option>
+                        <option value=25>25</option>
+                        <option value=26>26</option>
+                        <option value=27>27</option>
+                        <option value=28>28</option>
+                        <option value=29>29</option>
+                        <option value=30>30</option>
+                        <option value=31>31</option>
+                    </select>
+                    <div id="firstNameHelpLine" class="formHelpLineText">
+                        Date
+                    </div>
+                </div>
+                <div class="month">
+                    <select name="dob_month" class="Month glow try" required>
+                        <option selected></option>
+                        <option value=1>January</option>
+                        <option value=2>Febuary</option>
+                        <option value=3>March</option>
+                        <option value=4>April</option>
+                        <option value=5>May</option>
+                        <option value=6>June</option>
+                        <option value=7>july</option>
+                        <option value=8>August</option>
+                        <option value=9>September</option>
+                        <option value=10>October</option>
+                        <option value=11>November</option>
+                        <option value=12>December</option>
+                    </select>
+                    <div id="firstNameHelpLine" class="formHelpLineText">
+                        Month
+                    </div>
+                </div>
+                <div class="year">
+                    <input type="Number " name="dob_year" id="y" class="no-spinners Year glow try" required>
+                    <div id="firstNameHelpLine" class="formHelpLineText">
+                        Year
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Email-section -->
+            <div class="mail-container">
+                <div class="mail-heading">
+                    <h3>Email</h3>
+                </div>
+                <div class="mail-input">
+                    <input type="email" name="yourMail" id="mail" class="mail-box glow try" required>
+                </div>
+
+            </div>
+
+
+            <!-- gender-section -->
+            <div class="gender-container">
+                <div class="mail-heading">
+                    <h3>Gender</h3>
+                </div>
+                <div class="gender">
+                    <select class="addState glow try" name="gender" required>
+                        <option selected></option>
+                        <option value="male">Male</option>
+                        <option value="female">female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- phoneNumber-Section -->
+            <div class="phone-container">
+                <div class="phone-heading">
+                    <h3>Phone Number</h3>
+                </div>
+                <div class="mail-input">
+                    <input type="number" name="phoneNumber" id="pNumber" class="mail-box no-spinners glow try" required>
+                </div>
+            </div>
+
+            <!-- Adress-section -->
+            <div class="adress-container">
+                <div class="adress-heading">
+                    <h3>Address</h3>
+                </div>
+                <div class="street-container">
+                    <div class="street-one">
+                        <input type="text" name="stree_One" id="street-one" class="addStreet glow try" required>
+                        <div class="formHelpLineText">
+                            Street
+                        </div>
+                    </div>
+                    <div class="street-two">
+                        <input type="text" name="stree_Two" id="street-two" class="addStreet glow try" required>
+                        <div class="formHelpLineText">
+                            Street Address Line 2
+                        </div>
+                    </div>
+                </div>
+                <div class="state-city">
+                    <div class="city-container">
+                        <input type="text" name="addressCity" id="city" class="addCity glow try" required>
+                        <div class="formHelpLineText">
+                            City
+                        </div>
+                    </div>
+                    <div class="state-container">
+                        <select class="addState glow try" name="state" required>
+                            <option selected disabled value="">State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunchal Pradesh">Telangana</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Harayana">Harayana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                        </select>
+                        <div class="formHelpLineText">
+                            State / Province
+                        </div>
+                    </div>
+                </div>
+                <div class="zip-container">
+                    <input type="text" name="zipCode" id="zip" class="addZip glow try" required>
+                    <div class="formHelpLineText">
+                        Postal / Zip Code
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div class="submission-container">
+                    <button type="submit" class="btn btns">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
